@@ -1,0 +1,349 @@
+include templates.pug
+
+<!DOCTYPE html>
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        title
+        link(rel="stylesheet", href="css/bootstrap-reboot.min.css")
+        link(rel="stylesheet", href="css/main.css")
+    body
+        +CreateMenu("main")
+        //- .context-text
+        //-     p Таблица Менделеева
+        h1 Таблица Менделеева
+        .galary_block
+            h2 Галерея
+            .galary
+                .left_arrow
+                    img(src="img/arrow.png")
+                .galary_item
+                    a(href="Водород.html")
+                        img(src="https:////upload.wikimedia.org/wikipedia/commons/thumb/8/83/Hydrogen_discharge_tube.jpg/250px-Hydrogen_discharge_tube.jpg")
+                .galary_item
+                    a(href="Гелий.html")
+                        img(src="https:////upload.wikimedia.org/wikipedia/commons/thumb/8/82/Helium_discharge_tube.jpg/250px-Helium_discharge_tube.jpg")
+                .galary_item
+                    a(href="Литий.html")
+                        img(src="https:////upload.wikimedia.org/wikipedia/commons/thumb/2/21/Limetal.JPG/250px-Limetal.JPG")
+                .galary_item
+                    a(href="Бериллий.html")
+                        img(src="https:////upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Be-140g.jpg/250px-Be-140g.jpg")
+                .galary_item
+                    a(href="Бор.html")
+                        img(src="https:////upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Boron_mNACTEC.jpg/250px-Boron_mNACTEC.jpg")
+                .right_arrow
+                    img(src="img/arrow.png")
+
+        .element-block
+            .element.void
+                +CreateElementBlock("H", "1", "", "")
+            .element.void
+            .element.void
+            .element.void
+            .element.void
+            .element.void
+            .element.void
+            .element.void
+            .element.void
+            .element
+                +CreateElementBlock("H", "1", "1.00794±7", "Водород")
+            .element
+                +CreateElementBlock("He", "2", "4.002602±2", "Гелий")
+            /////////////////////////////////////////////////////////
+            .element
+                +CreateElementBlock("Li", "3", "6.941±2", "Литий")
+            .element
+                +CreateElementBlock("Be", "4", "9.01218±1", "Бериллий")
+            .element
+                +CreateElementBlock("B", "5", "10.811±5", "Бор")
+            .element
+                +CreateElementBlock("C", "6", "12.011±1", "Углерод")
+            .element
+                +CreateElementBlock("N", "7", "14.0067±1", "Азот")
+            .element
+                +CreateElementBlock("O", "8", "15.9994±3", "Кислород")
+            .element
+                +CreateElementBlock("F", "9", "18.998403±1", "Фтор")
+            .element.void
+            .element.void
+            .element.void
+            .element
+                +CreateElementBlock("Ne", "10", "20.179±1", "Неон")
+            /////////////////////////////////////////////////////////
+            .element
+                +CreateElementBlock("Na", "11", "22.98977±1", "Натрий")
+            .element
+                +CreateElementBlock("Mg", "12", "24.305±1", "Магний")
+            .element
+                +CreateElementBlock("Al", "13", "26.98154±1", "Алюминий")
+            .element
+                +CreateElementBlock("Si", "14", "28.0855±3", "Кремний")
+            .element
+                +CreateElementBlock("P", "15", "30.97376±1", "Фосфор")
+            .element
+                +CreateElementBlock("S", "16", "32.066±6", "Сера")
+            .element
+                +CreateElementBlock("Cl", "17", "35.453±1", "Хлор")
+            .element.void
+            .element.void
+            .element.void
+            .element
+                +CreateElementBlock("Ar", "18", "39.948±1", "Аргон")
+            /////////////////////////////////////////////////////////
+            .element
+                +CreateElementBlock("K", "19", "39.0983±1", "Калий")
+            .element
+                +CreateElementBlock("Ca", "20", "40.078±4", "Кальций")
+            .element
+                +CreateElementBlock("Sc", "21", "44.95591±1", "Скандий")
+            .element
+                +CreateElementBlock("Ti", "22", "47.88±3", "Титан")
+            .element
+                +CreateElementBlock("V", "23", "50.9415±1", "Ванадий")
+            .element
+                +CreateElementBlock("Cr", "24", "51.9961±6", "Хром")
+            .element
+                +CreateElementBlock("Mn", "25", "54.9380±1", "Марганец")
+            .element
+                +CreateElementBlock("Fe", "26", "55.847±3", "Железо")
+            .element
+                +CreateElementBlock("Co", "27", "58.9332±1", "Кобальт")
+            .element
+                +CreateElementBlock("Ni", "28", "58.69±1", "Никель")
+            .element
+            /////////////////////////////////////////////////////////
+            .element
+                +CreateElementBlock("Cu", "29", "63.546±3", "Медь")
+            .element
+                +CreateElementBlock("Zn", "30", "65.39±2", "Цинк")
+            .element
+                +CreateElementBlock("Ga", "31", "69.723±4", "Галлий")
+            .element
+                +CreateElementBlock("Ge", "32", "72.59±3", "Германий")
+            .element
+                +CreateElementBlock("As", "33", "74.9216±1", "Мышьяк")
+            .element
+                +CreateElementBlock("Se", "34", "78.96±3", "Селен")
+            .element
+                +CreateElementBlock("Br", "35", "79.904±1", "Бром")
+            .element.void
+            .element.void    
+            .element.void
+            .element
+                +CreateElementBlock("Kr", "36", "83.80±1", "Криптон")
+            /////////////////////////////////////////////////////////
+            .element
+                +CreateElementBlock("Rb", "37", "85.4678±3", "Рубидий")
+            .element
+                +CreateElementBlock("Sr", "38", "87,62±1", "Стронций")
+            .element
+                +CreateElementBlock("Y", "39", "88.9059±1", "Иттрий")
+            .element
+                +CreateElementBlock("Zr", "40", "91.224±2", "Цирконий")
+            .element
+                +CreateElementBlock("Nb", "41", "92.9064±1", "Ниобий")
+            .element
+                +CreateElementBlock("Mo", "42", "95.94±1", "Молибден")
+            .element
+                +CreateElementBlock("Tc", "43", "97.9072", "Технеций")
+            .element
+                +CreateElementBlock("Ru", "44", "101.07±2", "Рутений")
+            .element
+                +CreateElementBlock("Rh", "45", "102.9055±1", "Родий")
+            .element
+                +CreateElementBlock("Pd", "46", "106.42±1", "Палладий")
+            .element
+            /////////////////////////////////////////////////////////
+            .element
+                +CreateElementBlock("Ag", "47", "107.8682±3", "Серебро")
+            .element
+                +CreateElementBlock("Cd", "48", "112.41±1", "Камдий")
+            .element
+                +CreateElementBlock("In", "49", "114.82±1", "Индий")
+            .element
+                +CreateElementBlock("Sn", "50", "118.710±7", "Олово")
+            .element
+                +CreateElementBlock("Sb", "51", "121.75±3", "Сурьма")
+            .element
+                +CreateElementBlock("Te", "52", "127.60±3", "Теллур")
+            .element
+                +CreateElementBlock("I", "53", "126.9045±1", "Иод")
+            .element.void
+            .element.void    
+            .element.void
+            .element
+                +CreateElementBlock("Xe", "54", "131.29±3", "Ксенон")
+            /////////////////////////////////////////////////////////
+            .element
+                +CreateElementBlock("Cs", "55", "132.9054±1", "Цезий")
+            .element
+                +CreateElementBlock("Ba", "56", "137.33±1", "Барий")
+            .element
+                +CreateElementBlock("La*", "57", "138.9055±3", "Лантан")
+            .element
+                +CreateElementBlock("Hf", "72", "178.49±3", "Гафний")
+            .element
+                +CreateElementBlock("Ta", "73", "180.9479±1", "Тантал")
+            .element
+                +CreateElementBlock("W", "74", "183.85±3", "Вольфрам")
+            .element
+                +CreateElementBlock("Re", "75", "186.207±1", "Рений")
+            .element
+                +CreateElementBlock("Os", "76", "190.2±1", "Осмий")
+            .element
+                +CreateElementBlock("Ir", "77", "192.22±3", "Иридий")
+            .element
+                +CreateElementBlock("Pt", "78", "195.08±3", "Платина")
+            .element
+            /////////////////////////////////////////////////////////
+            .element
+                +CreateElementBlock("Au", "79", "196.9665±1", "Золото")
+            .element
+                +CreateElementBlock("Hg", "80", "200.59±3", "Ртуть")
+            .element
+                +CreateElementBlock("Tl", "81", "204.383±1", "Таллий")
+            .element
+                +CreateElementBlock("Pb", "82", "207.2±1", "Свинец")
+            .element
+                +CreateElementBlock("Bi", "83", "208.9804±1", "Висмут")
+            .element
+                +CreateElementBlock("Po", "84", "208.9824", "Полоний")
+            .element
+                +CreateElementBlock("At", "85", "209.9871", "Астат")
+            .element.void
+            .element.void    
+            .element.void
+            .element
+                +CreateElementBlock("Rn", "86", "222.0176", "Радон")
+            /////////////////////////////////////////////////////////
+            .element
+                +CreateElementBlock("Fr", "87", "223.0197", "Франций")
+            .element
+                +CreateElementBlock("Ra", "88", "226.0254", "Радий")
+            .element
+                +CreateElementBlock("Ac**", "89", "227.0278", "Актиний")
+            .element
+                +CreateElementBlock("Rf", "104", "[261]", "Резерфордий")
+            .element
+                +CreateElementBlock("Db", "105", "[262]", "Дубний")
+            .element
+                +CreateElementBlock("Sg", "106", "[263]", "Сиборгий")
+            .element
+                +CreateElementBlock("Bh", "107", "[262]", "Борий")
+            .element
+                +CreateElementBlock("Hs", "108", "[265]", "Хассий")
+            .element
+                +CreateElementBlock("Mt", "109", "[266]", "Мейтнерий")
+            .element
+                +CreateElementBlock("Ds", "110", "(281)", "Дармштадий")
+            .element
+            /////////////////////////////////////////////////////////
+            .element
+                +CreateElementBlock("Rg", "111", "(281)", "Рентгений")
+            .element
+                +CreateElementBlock("Cn", "112", "285", "Коперниций")
+            .element
+                +CreateElementBlock("Nh", "113", "(286)", "Нихоний")
+            .element
+                +CreateElementBlock("Fl", "114", "289", "Флеровий")
+            .element
+                +CreateElementBlock("Mc", "115", "289", "Московий")
+            .element
+                +CreateElementBlock("Lv", "116", "293", "Ливерморий")
+            .element
+                +CreateElementBlock("Ts", "117", "[294]", "Теннессин")
+            .element
+                +CreateElementBlock("Og", "118", "[294]", "Оганесон")
+            .element.void    
+            .element.void
+            .element.void
+
+        .context-text
+            p Лантаноиды
+
+        .element-block-lat
+            .element
+                +CreateElementBlock("Ce", "58", "140.12±1", "Церий")
+            .element
+                +CreateElementBlock("Pr", "59", "140.9077±1", "Празеодим")
+            .element
+                +CreateElementBlock("Nd", "60", "144.24±3", "Неодим")
+            .element
+                +CreateElementBlock("Pm", "61", "144.9128", "Прометий")
+            .element
+                +CreateElementBlock("Sm", "62", "150.36±3", "Самарий")
+            .element
+                +CreateElementBlock("Eu", "63", "151.96±1", "Европий")
+            .element
+                +CreateElementBlock("Gd", "64", "157.25±3", "Гадолиний")
+            .element
+                +CreateElementBlock("Tb", "65", "159.9254±1", "Тербий")
+            .element
+                +CreateElementBlock("Dy", "66", "162.50±3", "Диспрозий")    
+            .element
+                +CreateElementBlock("Ho", "67", "164.9304±1", "Гольмий")
+            .element
+                +CreateElementBlock("Er", "68", "167.26±3", "Эрбий")
+            .element
+                +CreateElementBlock("Tm", "69", "168.9342±1", "Тулий")
+            /////////////////////////////////////////////////////////
+            .element.void
+            .element.void
+            .element.void
+            .element.void
+            .element.void
+            .element
+                +CreateElementBlock("Yb", "70", "173.04±3", "Иттербий")
+            .element
+                +CreateElementBlock("Lu", "71", "174.967±1", "Лютеций")
+            .element.void
+            .element.void    
+            .element.void
+            .element.void
+            .element.void
+
+        .context-text
+            p Актиноиды
+
+        .element-block-lat
+            .element
+                +CreateElementBlock("Th", "90", "232.0381±1", "Торий")
+            .element
+                +CreateElementBlock("Pa", "91", "231.0359", "Протактиний")
+            .element
+                +CreateElementBlock("U", "92", "238.0289±1", "Уран")
+            .element
+                +CreateElementBlock("Np", "93", "237.0482", "Нептуний")
+            .element
+                +CreateElementBlock("Pu", "94", "244.0642", "Плутоний")
+            .element
+                +CreateElementBlock("Am", "95", "243.0614", "Амерций")
+            .element
+                +CreateElementBlock("Cm", "96", "247.0703", "Кюрий")
+            .element
+                +CreateElementBlock("Bk", "97", "247.0703", "Берклий")
+            .element
+                +CreateElementBlock("Cf", "98", "251.0796", "Калифорний")   
+            .element
+                +CreateElementBlock("Es", "99", "252.0828", "Эйнштейний")
+            .element
+                +CreateElementBlock("Fm", "100", "257.0951", "Фермий")
+            .element
+                +CreateElementBlock("Md", "101", "258.0986", "Менделевий")
+            /////////////////////////////////////////////////////////
+            .element.void
+            .element.void
+            .element.void
+            .element.void
+            .element.void
+            .element
+                +CreateElementBlock("No", "102", "259.1009", "Нобелий")
+            .element
+                +CreateElementBlock("Lr", "103", "260.1054", "Лоуренсий")
+            .element.void
+            .element.void    
+            .element.void
+            .element.void
+            .element.void

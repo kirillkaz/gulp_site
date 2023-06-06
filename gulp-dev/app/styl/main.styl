@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap')
+
+html
+    font-family 'Montserrat','Arial'
+
+h1
+    text-align center
+
+h2
+    text-align center
+p
+    padding 0px
+    margin 0px
+
+.menu
+    display:grid
+    grid-template-columns 49% 49%
+    text-align center
+    justify-content center
+    height 50px
+    background-color: black
+
+.menu_item
+    height 100%
+    margin auto 0px
+
+.menu_item a
+    color white
+    text-decoration none
+
+.text
+    font-family 'Montserrat','Arial'
+    font-size 20px
+    display inline-block
+    height 100%
+    
+
+.text a
+    display block
+    margin-top 5%
+    transition 0.2s
+
+.menu_item.active .text
+    border-top-left-radius: 20px
+    border-top-right-radius: 20px
+    background-color white
+
+.menu_item.active a
+    color black
+    text-decoration none
+
+.menu_item.active .text > a:hover
+    color: black
+    font-size 20px
+
+.menu_item .text > a:hover
+    font-size 22px
+    transition 0.2s
+
+.element-block
+    display grid
+    grid-template-columns 9% 9% 9% 9% 9% 9% 9% 9% 9% 9% 9%
+    margin-top 10px
+    margin-bottom 20px
+
+
+.element-block-lat
+    display grid
+    grid-template-columns 8% 8% 8% 8% 8% 8% 8% 8% 8% 8% 8% 8%
+    margin-top 10px
+    margin-bottom 20px
+
+
+.element
+    margin-top 10px
+    margin-bottom 10px
+
+table
+    font-family 'Montserrat','Arial'
+    
+.element table
+    margin auto
+    border thin solid black
+    min-height 100%
+    min-width 75%
+    width 90%
+
+.context-text
+    font-family 'Montserrat','Arial'
+    font-weight bold
+    font-size 34px
+    text-align center
+
+.number
+    text-align right
+    padding-right 5px
+
+.galary_block
+    margin-top 50px
+
+.galary
+    display flex
+    justify-content center
+    text-align center
+
+.galary .galary_item
+    width 16%
+    
+
+.galary .galary_item a img
+    margin-top 0%
+    width 100%
+    height 60%
+    transition 0.25s
+
+.galary .galary_item:nth-child(2) a img
+    border-top-left-radius: 15px
+    border-bottom-left-radius: 15px
+
+.galary .galary_item:nth-last-child(2) a img
+    border-top-right-radius: 15px
+    border-bottom-right-radius: 15px
+
+
+.galary .galary_item:hover a img
+    transform translate(0px, 20px)
+    transition 0.25s
+
+
+.galary .right_arrow
+    display flex
+    margin-top 5%
+
+.galary .right_arrow img
+    width 25px
+    height 25px
+    transition 0.25s
+
+.galary .right_arrow:hover img
+    transition 0.25s
+    transform translate(10px, 0px)
+
+.galary .left_arrow
+    display flex
+    margin-top 5%
+
+.galary .left_arrow img
+    transition 0.25s
+    transform rotate(180deg)
+    width 25px
+    height 25px
+
+.galary .left_arrow:hover img
+    transition 0.25s
+    transform translate(-10px, 0px) rotate(180deg)
+
+@media screen and (max-width: 1450px)
+    .elem_name
+        display none
+
+@media screen and (max-width: 1100px)
+    .elem_mass
+        display none
+    
+    .galary .galary_item:hover a img
+        transform translate(0px, 10px)
+        transition 0.25s
+
+    .galary .right_arrow img
+        width 15px
+        height 15px
+        transition 0.25s
+
+    .galary .right_arrow:hover img
+        transition 0.25s
+        transform translate(5px, 0px)
+
+    .galary .left_arrow img
+        transition 0.25s
+        transform rotate(180deg)
+        width 15px
+        height 15px
+
+    .galary .left_arrow:hover img
+        transition 0.25s
+        transform translate(-5px, 0px) rotate(180deg)
+
+@media screen and (max-width: 700px)
+    .galary .galary_item:hover a img
+        transform translate(0px, 5px)
+        transition 0.25s
+    .void
+        display none
+    .elem_name
+        display inline
+    .elem_mass
+        text-align center
+        display inline
+
+    .element-block
+        justify-content center
+        display grid
+        grid-template-columns 50%
+        margin-top 10px
+        margin-bottom 20px
+
+    .element-block-lat
+        justify-content center
+        display grid
+        grid-template-columns 50%
+        margin-top 10px
+        margin-bottom 20px
+    

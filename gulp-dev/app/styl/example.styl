@@ -1,0 +1,175 @@
+flex_row_mode()
+  display flex
+  flex-direction row
+
+flex_column_mode()
+  display flex
+  flex-direction column
+
+body
+ background-color #164B69
+ font-size 16px
+ font-family Arial
+
+.main-block
+ width 80%
+ margin 40px auto
+ padding 10px 30px
+ background-color #E3E3E3
+ color black
+
+.menu
+ flex_row_mode()
+ justify-content space-around
+ width 100%
+ padding 10px 0px
+ &_item
+  width 16%
+  padding 10px
+  font-weight bold
+  text-align center
+  &:hover
+   background-color #DCDCDC
+
+.page
+ background-color #DCDCDC
+
+a
+ text-decoration none
+ color black
+ &:hover
+  color #00BFFF
+
+p
+ text-indent 30px
+ text-align justify
+ line-height 2em
+ word-spacing 1.5em
+
+@media(max-width:600px)
+  body
+   font-size 14px
+  .main-block
+   width 90%
+  .menu
+   flex-wrap wrap
+   &_item
+    width 50%
+
+.CSS
+ .block1
+  flex_column_mode()
+  padding 10px
+
+  img
+   float right
+   margin 0px 10px 10px 10px
+
+ .block2
+  flex_row_mode()
+  justify-content space-around
+  margin 10px
+
+  video
+   width 40%
+ @media(max-width:600px)
+  .block1
+   text-align center
+   flex-direction column
+   &-item2
+
+    img
+     float none
+     width 90%
+     padding 15px
+
+  .block2
+   flex-direction column
+   align-items center
+
+   video
+    width 85%
+
+.Shrift
+ .block1
+  flex_row_mode()
+  width 100%
+  text-align center
+  margin 15px 0px
+  &-item
+   width 33.33%
+ img
+  width 90%
+ .block2
+  padding 10px
+ .block3
+  padding 10px
+ @media(max-width:600px)
+  .block1
+   flex-direction column
+   align-items center
+   &-item
+    width 100%
+    padding 10px
+
+.Blocks
+  width 80%
+  margin 40px auto
+  padding 10px 30px
+  background-color #E3E3E3 
+  .img_block
+    flex_row_mode()
+    width 100%
+    margin 15px 0px
+    text-align center
+    &-item
+      width 33.33%
+    img
+      width 90%
+
+  .text_block
+    flex_row_mode()
+    overflow hidden
+    width 100% 
+    text-align center
+    padding-left 2%
+    padding-right 2%
+    .left_text
+      display flex
+      text-align justify
+      float left
+      padding-top 1vw
+      padding-bottom 3vw
+      width 100%
+
+    .middle_text
+      flex_column_mode()
+      width 100%
+      margin-left 20px
+
+@media(max-width:600px)
+  .Blocks
+    width 90%
+    .img_block
+        flex_column_mode()
+        justify-content center
+        justify-content space-around
+        width 100%
+        &-item
+          width 100%
+          padding 10px
+    
+    .text_block
+        flex_column_mode()
+        border thin solid black
+        width 100%
+        .left_text
+          width 100%
+          
+        .middle_text
+          width 100%
+          margin 0px
+  .menu
+    flex_column_mode()
+    &_item
+      width 100%

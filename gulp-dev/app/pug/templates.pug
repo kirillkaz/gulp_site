@@ -1,0 +1,50 @@
+- var sint = "Синтаксис CSS";
+- var css = "CSS";
+- var paste_css = "Вставка CSS";
+- var css_text = "CSS текст";
+- var css_shrift = "CSS шрифт";
+- var blocks = "Блоки";
+
+mixin CreateElementBlock(letter, number, mass, name)
+    table
+        thead 
+        tbody
+            tr
+                td
+                    a(href=name+'.html') #{letter} 
+                td 
+                    .number
+                        span #{number} 
+            tr
+                td(colspan = 2)
+                    .elem_mass
+                        span #{mass} 
+            tr
+                td(colspan = 2)
+                    .elem_name
+                        span #{name}
+        tfoot
+
+mixin CreateMenu(marker)
+    .menu
+        if marker == "main"
+            .menu_item.active
+                .text
+                    a(href="#") Главная страница
+            .menu_item
+                .text
+                    a(href="table.html") Элементы в таблице
+        else if marker == "table"
+            .menu_item
+                .text
+                    a(href="index.html") Главная страница
+            .menu_item.active
+                .text
+                    a(href="#") Элементы в таблице
+        else
+            .menu_item
+                .text
+                    a(href="index.html") Главная страница
+            .menu_item
+                .text
+                    a(href="table.html") Элементы в таблице

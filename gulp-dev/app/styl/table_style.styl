@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap')
+
+html
+    font-family 'Montserrat','Arial'
+
+.menu
+    display:grid
+    grid-template-columns 49% 49%
+    text-align center
+    justify-content center
+    height 50px
+    background-color: black
+
+.menu_item
+    height 100%
+    margin auto 0px
+
+.menu_item a
+    color white
+    text-decoration none
+
+.text
+    font-family 'Montserrat','Arial'
+    font-size 20px
+    display inline-block
+    height 100%
+    
+
+.text a
+    display block
+    margin-top 5%
+    transition 0.2s
+
+.menu_item.active .text
+    border-top-left-radius: 20px
+    border-top-right-radius: 20px
+    background-color white
+
+.menu_item.active a
+    color black
+    text-decoration none
+
+.menu_item.active .text > a:hover
+    color: black
+    font-size 20px
+
+.menu_item .text > a:hover
+    font-size 22px
+    transition 0.2s
+
+h1
+    text-align center
+
+table
+    text-align center
+    transition 0.5s
+    font-family 'Montserrat','Arial'
+    margin 30px auto
+    max-width 95%
+
+th
+    border thin solid grey
+
+td
+    border thin solid grey
+
+tr:hover
+    background-color #eeeeee
+
+span
+    font-size 20px
+    font-family 'Montserrat','Arial'
+
+.sortText
+    font-size 15px
+    font-family 'Montserrat','Arial'
+
+label
+    font-family 'Montserrat','Arial'
+
+.filter_block
+    margin-left 20px
+    border-radius 20px
+
+.minMaxMass_block
+    display flex
+
+.minMaxMass_block input
+    margin-right 10px
+
+.viewElements_block select
+    font-family 'Montserrat','Arial'
+    font-size 13px
+
+.viewClassOfElements
+    display flex
+
+.viewClassOfElements label
+    margin-right 10px
+    margin-left 5px
+    margin-top 5px
+
+.viewClassOfElements .viewClassOfElements_item
+    font-size 15px
+
+.selectSort_block
+    margin-left 20px
+    margin-bottom 20px
+
+.selectSort_block label
+    display flex
+
+.selectSort_block label select
+    max-width 200px
+
+.selectSort_block select
+    font-family 'Montserrat','Arial'
+    font-size 13px
+    margin-right 10px
+
+.bold_element
+    font-weight bold
+    display block
+    margin 10px 0 5px 0px
+
+.blueButton
+    margin-top 10px
+    transition 0.5s
+    color white
+    background-color #155CC6
+    border none
+    border-radius 7px
+
+.blueButton:hover
+    margin-top 10px
+    transition 0.5s
+    color #155CC6
+    background-color #E8E8E8
+    border none
+    border-radius 7px
+
+.blueButton:active
+    margin-top 10px
+    transition 0.5s
+    color #155CC6
+    background-color rgb(170, 170, 170)
+    border none
+    border-radius 7px
+
+.redButton
+    transition 0.5s
+    color white
+    background-color #C61515
+    border none
+    border-radius 7px
+    margin-top 10px
+    margin-left 20px
+
+.redButton:hover
+    transition 0.5s
+    color #C61515
+    background-color #E8E8E8
+    border none
+    border-radius 7px
+    margin-top 10px
+    margin-left 20px
+
+.redButton:active
+    color #C61515
+    background-color rgb(170, 170, 170)
+    border none
+    border-radius 7px
+    margin-top 10px
+    margin-left 20px
+
+input[type="button"]
+    font-family 'Montserrat','Arial'
+
+.graph
+    margin-left 20px
+
+input[type="radio"]
+  /* убираем стандартные стили */
+  -webkit-appearance none
+  -moz-appearance none
+  appearance none
+  /* добавляем кастомный стиль маркера */
+  width 15px
+  height 15px
+  border-radius 50%
+  border 2px solid #a5a5a5
+  background-color #fff
+  vertical-align middle
+
+/* добавляем стиль для выбранного радио-кнопки */
+input[type="radio"]:checked::before
+  content ""
+  position inherit
+  display block
+  top 50%
+  left 50%
+  transform translate(19%, 19%)
+  width 8px
+  height 8px
+  border-radius 50%
+  background-color #a5a5a5
+
+input[type="radio"]:checked:hover::before
+  content ""
+  position inherit
+  display block
+  top 50%
+  left 50%
+  transform translate(19%, 19%)
+  width 8px
+  height 8px
+  border-radius 50%
+  background-color #8d8d8d
+
+
+@media screen and (max-width: 1150px)
+   .minMaxMass_block
+    display inline-block
+   .minMaxMass_block label
+    margin-top 0px
+
+@media screen and (max-width: 1000px)
+   table span
+    font-size 15px
+    font-family 'Montserrat','Arial'
+
+   table
+    transition 0.5s
+    font-size 12px
+
+@media screen and (max-width: 900px)
+
+   .selectSort_block label
+    display flex
+    flex-direction column
+    
+   .viewClassOfElements
+    display inline-flex
+    flex-direction column
+
+   .viewClassOfElements label
+    margin-left 10px
+   .viewClassOfElements *
+    margin-right 0px
+
+@media screen and (max-width: 800px)
+   table
+    transition 0.5s
+    font-size 10px
+
+@media screen and (max-width: 700px)
+   table
+    font-size 8px
+    font-family 'Montserrat','Arial'
