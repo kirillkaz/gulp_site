@@ -95,6 +95,26 @@ html
             td
               input(name="oy" type="radio" value="temp_plav")
               label Температура плавления
+        div(class="graphSettins")
+          div(class="minMaxSettings")
+            div(class="setting")
+              span(class="viewClassOfElements_item") Минимальные значения
+              input(type="checkbox" name="minElems" checked)
+            div(class="setting")
+              span(class="viewClassOfElements_item") Максимальные значения
+              input(type="checkbox" name="maxElems" checked)
+          div(class="graphType")
+            div(class="type")
+              span(class="viewClassOfElements_item") Точечная диаграмма
+              input(type="radio" name="type" checked)
+            div(class="type")
+              span(class="viewClassOfElements_item") Столбчатая диаграмма
+              input(type="radio" name="type")
+        div(class="graphButtons")
+          input(type="button" value="Построить график" class="blueButton" onclick="drawGraph()")
+          input(type="button" value="Скрыть график" class="redButton" onclick="hideGraph()")
+        div(class="graph_block")
+            svg
     table(class="main_table")
       tr
         th №
@@ -1525,3 +1545,4 @@ html
         td 
         td Обычный
     script(src="js/sort.js")
+    script(src="js/graph.js")

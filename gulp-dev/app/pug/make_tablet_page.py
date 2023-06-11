@@ -114,8 +114,28 @@ html\n\
               input(name="ox" type="radio" value="group")\n\
             td\n\
               input(name="oy" type="radio" value="temp_plav")\n\
-              label Температура плавления\n'
-    
+              label Температура плавления\n\
+        div(class="graphSettins")\n\
+          div(class="minMaxSettings")\n\
+            div(class="setting")\n\
+              span(class="viewClassOfElements_item") Минимальные значения\n\
+              input(type="checkbox" name="minElems" checked)\n\
+            div(class="setting")\n\
+              span(class="viewClassOfElements_item") Максимальные значения\n\
+              input(type="checkbox" name="maxElems" checked)\n\
+          div(class="graphType")\n\
+            div(class="type")\n\
+              span(class="viewClassOfElements_item") Точечная диаграмма\n\
+              input(type="radio" name="type" checked)\n\
+            div(class="type")\n\
+              span(class="viewClassOfElements_item") Столбчатая диаграмма\n\
+              input(type="radio" name="type")\n\
+        div(class="graphButtons")\n\
+          input(type="button" value="Построить график" class="blueButton" onclick="drawGraph()")\n\
+          input(type="button" value="Скрыть график" class="redButton" onclick="hideGraph()")\n\
+        div(class="graph_block")\n\
+            svg\n'
+        
     string+='\
     table(class="main_table")\n\
       tr\n\
@@ -153,7 +173,8 @@ html\n\
         string+='\
         td Обычный\n'
     string+='\
-    script(src="js/sort.js")'
+    script(src="js/sort.js")\n\
+    script(src="js/graph.js")'
 
     with open('gulp main site/gulp-dev/app/pug/table.pug', 'w+') as file:
         file.write(string)

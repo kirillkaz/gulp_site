@@ -179,6 +179,12 @@ input[type="button"]
 .graph
     margin-left 20px
 
+.graphButtons
+    text-align center
+
+.graph_table
+    margin-bottom 0px
+
 input[type="radio"]
   /* убираем стандартные стили */
   -webkit-appearance none
@@ -218,6 +224,46 @@ input[type="radio"]:checked:hover::before
   background-color #8d8d8d
 
 
+.graph_block
+    text-align center
+
+
+.graphSettins
+    display flex
+    justify-content center
+    text-align center
+
+.graphSettins span
+    font-size 13px  
+
+.minMaxSettings
+    display flex
+    flex-direction column
+    justify-content center
+    text-align center
+    margin-right 20px
+
+svg
+    background-color white
+
+
+svg text 
+    font 8px Verdana
+    color black
+
+
+svg path, line 
+    fill none
+    stroke #333333
+    width 1px
+
+
+svg .grid-line 
+    stroke black
+    shape-rendering crispedges
+    stroke-opacity 0.1
+
+
 @media screen and (max-width: 1150px)
    .minMaxMass_block
     display inline-block
@@ -232,7 +278,7 @@ input[type="radio"]:checked:hover::before
    table
     transition 0.5s
     font-size 12px
-
+// .attr("transform", "scale(1.6)")
 @media screen and (max-width: 900px)
 
    .selectSort_block label

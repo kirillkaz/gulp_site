@@ -146,6 +146,8 @@ const SortTable = () =>{
         alert('Ошибка! Вы не выбрали поля для сортировки!')
         return
     }
+    
+    //сделать нормально(потом)
     //сортирую элементы таблицы
     if(field2 != '-------'){    
         let sortDir = voidDataSection[4].value

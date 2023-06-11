@@ -177,6 +177,12 @@ input[type="button"] {
 .graph {
   margin-left: 20px;
 }
+.graphButtons {
+  text-align: center;
+}
+.graph_table {
+  margin-bottom: 0px;
+}
 input[type="radio"] {
 /* убираем стандартные стили */
   -webkit-appearance: none;
@@ -214,6 +220,42 @@ input[type="radio"]:checked:hover::before {
   height: 8px;
   border-radius: 50%;
   background-color: #8d8d8d;
+}
+.graph_block {
+  text-align: center;
+}
+.graphSettins {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.graphSettins span {
+  font-size: 13px;
+}
+.minMaxSettings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-right: 20px;
+}
+svg {
+  background-color: #fff;
+}
+svg text {
+  font: 8px Verdana;
+  color: #000;
+}
+svg path,
+line {
+  fill: none;
+  stroke: #333;
+  width: 1px;
+}
+svg .grid-line {
+  stroke: #000;
+  shape-rendering: crispedges;
+  stroke-opacity: 0.1;
 }
 @media screen and (max-width: 1150px) {
   .minMaxMass_block {

@@ -97,11 +97,17 @@ table
 
 .galary_block
     margin-top 50px
+    // display flex
+    // justify-content center
+    // text-align center
+    display grid
+    grid-template-columns 8% 2% 80% 2% 8%
 
 .galary
     display flex
     justify-content center
     text-align center
+    width 100%
 
 .galary .galary_item
     width 16%
@@ -113,11 +119,11 @@ table
     height 60%
     transition 0.25s
 
-.galary .galary_item:nth-child(2) a img
+.galary .galary_item:nth-child(1) a img
     border-top-left-radius: 15px
     border-bottom-left-radius: 15px
 
-.galary .galary_item:nth-last-child(2) a img
+.galary .galary_item:nth-last-child(1) a img
     border-top-right-radius: 15px
     border-bottom-right-radius: 15px
 
@@ -126,31 +132,40 @@ table
     transform translate(0px, 20px)
     transition 0.25s
 
+.galary .galary_item
+    transition 0.25s
+    opacity 0
 
-.galary .right_arrow
-    display flex
+.galary .in_galary
+    transition 0.50s
+    opacity 1
+
+.right_arrow
+    position static
     margin-top 5%
 
-.galary .right_arrow img
+.right_arrow img
     width 25px
     height 25px
     transition 0.25s
+    margin-top 170%
 
-.galary .right_arrow:hover img
+.right_arrow:hover img
     transition 0.25s
     transform translate(10px, 0px)
 
-.galary .left_arrow
-    display flex
+.left_arrow
+    position static
     margin-top 5%
 
-.galary .left_arrow img
+.left_arrow img
     transition 0.25s
     transform rotate(180deg)
     width 25px
     height 25px
+    margin-top 170%
 
-.galary .left_arrow:hover img
+.left_arrow:hover img
     transition 0.25s
     transform translate(-10px, 0px) rotate(180deg)
 
@@ -161,27 +176,27 @@ table
 @media screen and (max-width: 1100px)
     .elem_mass
         display none
-    
+
     .galary .galary_item:hover a img
         transform translate(0px, 10px)
         transition 0.25s
 
-    .galary .right_arrow img
+    .right_arrow img
         width 15px
         height 15px
         transition 0.25s
 
-    .galary .right_arrow:hover img
+    .right_arrow:hover img
         transition 0.25s
         transform translate(5px, 0px)
 
-    .galary .left_arrow img
+    .left_arrow img
         transition 0.25s
         transform rotate(180deg)
         width 15px
         height 15px
 
-    .galary .left_arrow:hover img
+    .left_arrow:hover img
         transition 0.25s
         transform translate(-5px, 0px) rotate(180deg)
 
@@ -210,4 +225,24 @@ table
         grid-template-columns 50%
         margin-top 10px
         margin-bottom 20px
+
+    .right_arrow img
+        width 15px
+        height 15px
+        transition 0.25s
+        transform scale(0.7)
+
+    .right_arrow:hover img
+        transition 0.25s
+        transform translate(5px, 0px) scale(0.7)
+
+    .left_arrow img
+        transition 0.25s
+        transform rotate(180deg) scale(0.7)
+        width 15px
+        height 15px
+
+    .left_arrow:hover img
+        transition 0.25s
+        transform translate(-5px, 0px) rotate(180deg) scale(0.7)
     

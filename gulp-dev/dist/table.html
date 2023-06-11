@@ -113,6 +113,31 @@
             </td>
           </tr>
         </table>
+        <div class="graphSettins">
+          <div class="minMaxSettings">
+            <div class="setting"><span class="viewClassOfElements_item">Минимальные значения</span>
+              <input type="checkbox" name="minElems" checked="checked"/>
+            </div>
+            <div class="setting"><span class="viewClassOfElements_item">Максимальные значения</span>
+              <input type="checkbox" name="maxElems" checked="checked"/>
+            </div>
+          </div>
+          <div class="graphType">
+            <div class="type"><span class="viewClassOfElements_item">Точечная диаграмма</span>
+              <input type="radio" name="type" checked="checked"/>
+            </div>
+            <div class="type"><span class="viewClassOfElements_item">Столбчатая диаграмма</span>
+              <input type="radio" name="type"/>
+            </div>
+          </div>
+        </div>
+        <div class="graphButtons">
+          <input class="blueButton" type="button" value="Построить график" onclick="drawGraph()"/>
+          <input class="redButton" type="button" value="Скрыть график" onclick="hideGraph()"/>
+        </div>
+        <div class="graph_block">
+          <svg></svg>
+        </div>
       </details>
     </form>
     <table class="main_table">
@@ -1665,5 +1690,6 @@
       </tr>
     </table>
     <script src="js/sort.js"></script>
+    <script src="js/graph.js"></script>
   </body>
 </html>
